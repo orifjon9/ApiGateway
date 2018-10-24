@@ -1,0 +1,14 @@
+// build app
+dotnet publish -c Release -o ./bin/Docker
+
+// create image and run catalog.api
+docker build -t catalog.api-image .
+docker run -d -p 7001:7001 --name catalog.api catalog.api-image
+
+// create image and run orders.api
+docker build -t orders.api-image .
+docker run -d -p 7002:7002 --name orders.api orders.api-image
+
+// create image and run gateway.api with link to microservices
+docker build -t gateway.api-image .
+docker run -d -p 7000:7000 --link catalog.api:catalog.api --link orders.api:orders.api gateway.api-image

@@ -3,7 +3,7 @@
             "DownstreamPathTemplate": "/api/{catchAll}",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [{
-                "Host": "localhost",
+                "Host": "catalog.api",
                 "Port": 7001
             }],
             "UpstreamPathTemplate": "/catalog-api/{catchAll}"
@@ -12,7 +12,7 @@
             "DownstreamPathTemplate": "/api/{catchAll}",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [{
-                "Host": "localhost",
+                "Host": "orders.api",
                 "Port": 7002
             }],
             "UpstreamPathTemplate": "/orders-api/{catchAll}"
