@@ -4,7 +4,7 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [{
                 "Host": "catalog.api",
-                "Port": 7001
+                "Port": 80
             }],
             "UpstreamPathTemplate": "/catalog-api/{catchAll}"
         },
@@ -13,7 +13,7 @@
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [{
                 "Host": "orders.api",
-                "Port": 7002
+                "Port": 80
             }],
             "UpstreamPathTemplate": "/orders-api/{catchAll}"
         }

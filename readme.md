@@ -18,3 +18,12 @@ Configure Ocelot <br>
 
 http://localhost:7000/catalog-api/currencies  ======> 	http://localhost:7001/api/currencies  <br>
 http://localhost:7000/orders-api/orders  ======>  http://localhost:7002/api/orders
+
+## Docker
+### Build
+Use `docker-compose build` command for build apps
+### Run
+Use `docker-compose up` command for run apps
+
+http://localhost:7000/catalog-api/currencies  ======> 	http://catalog.api/api/currencies  <br>
+http://localhost:7000/orders-api/orders  ======>  http://orders.api/api/orders
